@@ -34,14 +34,14 @@ export const Paciente = ({paciente, setPaciente}) => {
             <div className='flex justify-between'>
                 <button 
                 type='button'
-                className='py-2 px-10 bg-emerald-600 hover:bg-emerald-700 text-white fontt-bold uppercase rounded-lg'
+                className='py-2 px-10 bg-emerald-600 hover:bg-emerald-700 text-white fontt-bold uppercase rounded-xl'
                 onClick={()=> setPaciente(paciente)}
                 >Editar
                 </button>
 
                 <button 
                 type='button'
-                className='py-2 px-10 bg-red-600 hover:bg-red-700 text-white fontt-bold uppercase rounded-lg'
+                className='py-2 px-10 bg-red-600 hover:bg-red-700 text-white fontt-bold uppercase rounded-xl'
                 >Eliminar
                 </button>
             </div>

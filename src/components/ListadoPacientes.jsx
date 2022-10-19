@@ -26,8 +26,8 @@ export const ListadoPacientes = ({ pacientes, setPaciente }) => {
                     <>
                         <h2 className='font-black text-3xl text-center'>No hay pacientes</h2>
                         <p className='text-lg mt-5 mb-10 text-center'>
-                            Comienza agregando pacientes {''}
-                            <span className='text-emerald-600 font-bold'>y apareceran a continuacion</span>
+                            Comienza agregando pacientes y {''}
+                            <span className='text-emerald-600 font-bold'>apareceran a continuacion</span>
                         </p>
                     </>
                 )}
