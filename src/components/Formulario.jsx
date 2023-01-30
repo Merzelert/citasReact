@@ -85,7 +85,7 @@ export const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) =
                 {error && <Error><p>'Todos los campos son obligatorios'</p></Error>}
 
                 <div className='mb-5'>
-                    <label htmlFor='mascota' className='block text-gray-700 uppercase font-bold'>Nombre mascota</label>
+                    <label htmlFor='mascota' className='block text-gray-700 uppercase font-bold'>Nombre Mascota</label>
                     <input
                         id='mascota'
                         className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-sm' type="text"
@@ -110,7 +110,8 @@ export const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) =
                     <label htmlFor='email' className='block text-gray-700 uppercase font-bold'>Email</label>
                     <input
                         id='email'
-                        className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-sm' type="email"
+                        className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-sm' 
+                        type="email"
                         placeholder='Email contacto del propietario'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -121,7 +122,8 @@ export const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) =
                     <label htmlFor='alta' className='block text-gray-700 uppercase font-bold'>Alta</label>
                     <input
                         id='alta'
-                        className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-sm' type="date"
+                        className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-sm' 
+                        type="date"
                         value={fecha}
                         onChange={(e) => setFecha(e.target.value)} />
                 </div>
