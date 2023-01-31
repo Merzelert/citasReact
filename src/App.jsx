@@ -7,7 +7,11 @@ import { ListadoPacientes } from './components/ListadoPacientes'
 function App() {
 
     const [pacientes, setPacientes] = useState([])
-    const [paciente, setPaciente] = useState({})
+    const [paciente, setPaciente] = useState({}) // editar pacientes
+
+    const eliminarPaciente = (id) => { // eliminando paciente
+        console.log('eliminando paciente ', id)
+    }
 
     return (
         <div className='container mx-auto mt-20'>
@@ -22,7 +26,8 @@ function App() {
 
                 <ListadoPacientes
                     pacientes={pacientes}
-                    setPaciente={setPaciente} />
+                    setPaciente={setPaciente} 
+                    eliminarPaciente={eliminarPaciente}/>
             </div>
         </div>
     )
